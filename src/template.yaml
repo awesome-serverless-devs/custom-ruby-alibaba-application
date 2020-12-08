@@ -1,0 +1,23 @@
+MyFunctionDemo:
+  Component: fc
+  Provider: alibaba
+  Properties:
+    Region: cn-hangzhou
+    Service:
+      Name: custom-runtime-demo
+    Function:
+      Name: custom-ruby
+      CodeUri:
+        Src: ./
+        Excludes:
+          - .s
+          - README.md
+          - template.yaml
+      CAPort: 9000
+      Handler: index.handler
+      MemorySize: 512
+      Runtime: custom
+      Timeout: 60
+      Environment:
+        - Key: 'PATH'
+          Value: '/usr/local/ruby/bin'
