@@ -1,6 +1,6 @@
 Type: Application
 Name: custom-ruby
-Version: 0.0.2
+Version: 0.0.3
 Provider:
   - Alibaba
 Description:
