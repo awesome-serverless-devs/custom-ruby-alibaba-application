@@ -4,7 +4,6 @@
 
 - 初始化项目：`s init custom-ruby -p alibaba`
 - 进入项目：`cd custom-ruby`
-- 安装依赖：`s install docker -f ./fcfile`
 - 部署项目：`s deploy`
 - 触发项目：`s invoke remote -e "HelloWorld"`
 
